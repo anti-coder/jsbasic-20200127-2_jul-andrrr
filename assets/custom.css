@@ -422,7 +422,7 @@ form button[type="submit"]:not(.btn-send) {
     visibility: visible;
 }
 
-.sidebar .dropdown-menu.show {
+.sidebar .dropdown-menu.show { 
     top: -1px !important;
     left: 100% !important;
     transform: none !important;

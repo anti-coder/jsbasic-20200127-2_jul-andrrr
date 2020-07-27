@@ -1,7 +1,7 @@
 'use strict';
 
 class Carousel {
-  //метод, который будем перебирать
+  //свойство, которое будем перебирать
   slides = [
     {
       id: 0,
@@ -19,6 +19,7 @@ class Carousel {
       img: './assets/images/default-slide-img.jpg'
     }
   ];
+ 
 
   constructor(element) {
     this.el = document.createElement('body'); // создаем тело документа
@@ -141,7 +142,7 @@ class Carousel {
   // родительский элемент для вставки слайдов
     let parentSlides = this.el.querySelector('.carousel-inner');
 
-    // верстка самих слайдов, перебираем метод slides
+    // верстка самих слайдов, перебираем свойство slides
     for (let slide of this.slides) {
       let templateS = `
         <div class="carousel-item" data-slide="${slide.id}">
